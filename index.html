@@ -768,7 +768,7 @@
     </h1>
     <p class="hero-tagline">Driving organic growth through precision SEO strategy and high-performance WordPress development — turning clicks into conversions for 5+ years.</p>
     <div class="hero-actions">
-      <a href="#projects" class="btn-primary">View Projects</a>
+      <a href="#projects" class="btn-primary">View Projects →</a>
       <a href="#contact" class="btn-ghost">📧 Let's Talk</a>
     </div>
     <div class="hero-stats">
@@ -1122,7 +1122,7 @@
         <p>Have a project in mind? Looking to improve your search rankings or build a high-performance website? I'd love to hear from you.</p>
         <div class="contact-item">
           <div class="contact-icon">📧</div>
-          <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5d3a2f322a29353e322f3839343a34293c311d3a303c3431733e3230">[email&#160;protected]</a></span>
+          <span>growthcoredigital@gmail.com</span>
         </div>
         <div class="contact-item">
           <div class="contact-icon">📱</div>
@@ -1135,7 +1135,7 @@
         <div class="social-links">
           <a href="#" class="social-btn" title="LinkedIn">💼</a>
           <a href="#" class="social-btn" title="GitHub">🐙</a>
-          <a href="/cdn-cgi/l/email-protection#b5d2c7dac2c1ddd6dac7d0d1dcd2dcc1d4d9f5d2d8d4dcd99bd6dad8" class="social-btn" title="Email">✉️</a>
+          <a href="mailto:growthcoredigital@gmail.com" class="social-btn" title="Email">✉️</a>
           <a href="https://wa.me/923339898134" target="_blank" class="social-btn" title="WhatsApp">💬</a>
         </div>
       </div>
@@ -1170,7 +1170,7 @@
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   // Cursor
   const cursor = document.getElementById('cursor');
   const ring = document.getElementById('cursorRing');
@@ -1214,4 +1214,16 @@
     btn.style.background = '#00c896';
     setTimeout(() => {
       btn.textContent = 'Send Message →';
-    
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  }
+
+  // Nav shrink on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    nav.style.padding = window.scrollY > 80 ? '14px 5%' : '20px 5%';
+  });
+</script>
+</body>
+</html>
